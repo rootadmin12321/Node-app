@@ -11,8 +11,7 @@ services:
     ports:
       - "3306:3306"
   app:
-    build: .
-    container_name: node-app
+    image: root938/node-app:latest
     restart: always
     ports:
       - "3000:3000"
